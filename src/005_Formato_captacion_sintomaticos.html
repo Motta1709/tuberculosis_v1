@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>005 Formato de captación de sintomáticos</title>
+</head>
+<body>
+    <h1>005 Formato de captación de sintomáticos</h1>
+    <form action="#" method="post">
+        <label for="fecha">Fecha de captación:</label>
+        <input type="date" id="fecha" name="fecha" required><br><br>
+        
+        <label for="nombre">Nombre del paciente:</label>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+        
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad" min="0" required><br><br>
+        
+        <label for="sexo">Sexo:</label>
+        <select id="sexo" name="sexo" required>
+            <option value="">Seleccionar</option>
+            <option value="M">Masculino</option>
+            <option value="F">Femenino</option>
+        </select><br><br>
+        
+        <label for="direccion">Dirección:</label>
+        <input type="text" id="direccion" name="direccion"><br><br>
+        
+        <fieldset>
+            <legend>Síntomas:</legend>
+            <input type="checkbox" id="tos" name="sintomas" value="tos">
+            <label for="tos">Tos > 2 semanas</label><br>
+            <input type="checkbox" id="fiebre" name="sintomas" value="fiebre">
+            <label for="fiebre">Fiebre</label><br>
+            <input type="checkbox" id="sudoracion" name="sintomas" value="sudoracion">
+            <label for="sudoracion">Sudoración nocturna</label><br>
+            <input type="checkbox" id="perdida_peso" name="sintomas" value="perdida_peso">
+            <label for="perdida_peso">Pérdida de peso</label><br>
+        </fieldset><br>
+        
+        <label for="otros_sintomas">Otros síntomas:</label>
+        <textarea id="otros_sintomas" name="otros_sintomas"></textarea><br><br>
+        
+        <label for="referido">Referido a:</label>
+        <select id="referido" name="referido">
+            <option value="">Seleccionar</option>
+            <option value="centro_salud">Centro de salud</option>
+            <option value="hospital">Hospital</option>
+            <option value="laboratorio">Laboratorio</option>
+        </select><br><br>
+        
+        <label for="observaciones">Observaciones:</label>
+        <textarea id="observaciones" name="observaciones"></textarea><br><br>
+        
+        <input type="submit" value="Guardar">
+    </form>
+</body>
+</html>

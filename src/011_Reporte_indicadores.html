@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>011 Reporte de indicadores de gestión programático ET 2024</title>
+</head>
+<body>
+    <h1>011 Reporte de indicadores de gestión programático ET 2024</h1>
+    <form action="#" method="post">
+        <label for="periodo">Período de reporte:</label>
+        <input type="text" id="periodo" name="periodo" placeholder="Ej: Enero 2024" required><br><br>
+        
+        <h2>Casos de TB</h2>
+        <label for="casos_notificados">Casos notificados:</label>
+        <input type="number" id="casos_notificados" name="casos_notificados" min="0"><br><br>
+        
+        <label for="casos_nuevos">Casos nuevos:</label>
+        <input type="number" id="casos_nuevos" name="casos_nuevos" min="0"><br><br>
+        
+        <label for="casos_recaida">Casos de recaída:</label>
+        <input type="number" id="casos_recaida" name="casos_recaida" min="0"><br><br>
+        
+        <label for="casos_resistentes">Casos resistentes:</label>
+        <input type="number" id="casos_resistentes" name="casos_resistentes" min="0"><br><br>
+        
+        <h2>Tratamiento</h2>
+        <label for="tratamientos_iniciados">Tratamientos iniciados:</label>
+        <input type="number" id="tratamientos_iniciados" name="tratamientos_iniciados" min="0"><br><br>
+        
+        <label for="tasa_exito">Tasa de éxito de tratamiento (%):</label>
+        <input type="number" id="tasa_exito" name="tasa_exito" min="0" max="100" step="0.1"><br><br>
+        
+        <label for="muertes">Muertes durante tratamiento:</label>
+        <input type="number" id="muertes" name="muertes" min="0"><br><br>
+        
+        <label for="perdidos">Casos perdidos:</label>
+        <input type="number" id="perdidos" name="perdidos" min="0"><br><br>
+        
+        <h2>Quimioprofilaxis</h2>
+        <label for="contactos_identificados">Contactos identificados:</label>
+        <input type="number" id="contactos_identificados" name="contactos_identificados" min="0"><br><br>
+        
+        <label for="profilaxis_iniciada">Profilaxis iniciada:</label>
+        <input type="number" id="profilaxis_iniciada" name="profilaxis_iniciada" min="0"><br><br>
+        
+        <h2>Diagnóstico</h2>
+        <label for="baciloscopias_realizadas">Bacilloscopías realizadas:</label>
+        <input type="number" id="baciloscopias_realizadas" name="baciloscopias_realizadas" min="0"><br><br>
+        
+        <label for="positivos">Positivos:</label>
+        <input type="number" id="positivos" name="positivos" min="0"><br><br>
+        
+        <label for="observaciones">Observaciones:</label>
+        <textarea id="observaciones" name="observaciones"></textarea><br><br>
+        
+        <input type="submit" value="Generar Reporte">
+    </form>
+</body>
+</html>

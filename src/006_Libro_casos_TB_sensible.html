@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>006 Libro casos de TB y profilaxis sensible</title>
+</head>
+<body>
+    <h1>006 Libro casos de TB y profilaxis sensible</h1>
+    <form action="#" method="post">
+        <label for="numero_caso">Número de caso:</label>
+        <input type="text" id="numero_caso" name="numero_caso" required><br><br>
+        
+        <label for="fecha_diagnostico">Fecha de diagnóstico:</label>
+        <input type="date" id="fecha_diagnostico" name="fecha_diagnostico" required><br><br>
+        
+        <label for="nombre">Nombre del paciente:</label>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+        
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad" min="0" required><br><br>
+        
+        <label for="sexo">Sexo:</label>
+        <select id="sexo" name="sexo" required>
+            <option value="">Seleccionar</option>
+            <option value="M">Masculino</option>
+            <option value="F">Femenino</option>
+        </select><br><br>
+        
+        <label for="direccion">Dirección:</label>
+        <input type="text" id="direccion" name="direccion"><br><br>
+        
+        <label for="tipo_caso">Tipo de caso:</label>
+        <select id="tipo_caso" name="tipo_caso" required>
+            <option value="">Seleccionar</option>
+            <option value="nuevo">Nuevo</option>
+            <option value="recaida">Recaída</option>
+            <option value="fracaso">Fracaso</option>
+            <option value="otro">Otro</option>
+        </select><br><br>
+        
+        <label for="baciloscopia">Resultado baciloscopia:</label>
+        <select id="baciloscopia" name="baciloscopia">
+            <option value="">Seleccionar</option>
+            <option value="positivo">Positivo</option>
+            <option value="negativo">Negativo</option>
+            <option value="no_realizado">No realizado</option>
+        </select><br><br>
+        
+        <label for="regimen">Régimen de tratamiento:</label>
+        <input type="text" id="regimen" name="regimen" placeholder="Ej: 2HRZE/4HR"><br><br>
+        
+        <label for="fecha_inicio">Fecha de inicio de tratamiento:</label>
+        <input type="date" id="fecha_inicio" name="fecha_inicio"><br><br>
+        
+        <label for="resultado">Resultado del tratamiento:</label>
+        <select id="resultado" name="resultado">
+            <option value="">Seleccionar</option>
+            <option value="curado">Curado</option>
+            <option value="completado">Tratamiento completado</option>
+            <option value="fracaso">Fracaso</option>
+            <option value="muerte">Muerte</option>
+            <option value="perdido">Perdido</option>
+            <option value="otro">Otro</option>
+        </select><br><br>
+        
+        <label for="profilaxis">Profilaxis para contactos:</label>
+        <textarea id="profilaxis" name="profilaxis" placeholder="Detalles de profilaxis aplicada"></textarea><br><br>
+        
+        <label for="observaciones">Observaciones:</label>
+        <textarea id="observaciones" name="observaciones"></textarea><br><br>
+        
+        <input type="submit" value="Guardar Caso">
+    </form>
+</body>
+</html>
